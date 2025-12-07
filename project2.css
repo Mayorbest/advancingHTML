@@ -1,0 +1,35 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: linear-gradient(
+  120deg,            /* diagonal blendby certain amount of degrees */
+  red 0%,            /* 1st color */
+  orange 20%,        /* 2nd color */
+  yellow 40%,        /* 3rd color */
+  green 60%,         /* 4th color */
+  blue 80%,          /* 5th color */
+  purple 100%        /* 6t*/
+  );
+  background-size: 200% 200%;
+  animation: moveGradient 12s ease infinite;
+}
+@keyframes moveGradient {
+  0%  { background-position: 0% 50%; }
+  50% { background-position: 100% 50%;}
+  100%{ background-position: 0% 50%; }
+}
+
+/*body {
+  background: linear-gradient(
+    to right,          /* direction: vertical stripes /
+    red 0 16.66%,      /* 1st stripe covers ~1/6 /
+    orange 16.66% 33.33%, /* 2nd stripe /
+    yellow 33.33% 50%,    /* 3rd stripe /
+    green 50% 66.66%,     /* 4th stripe /
+    blue 66.66% 83.33%,   /* 5th stripe /
+    purple 83.33% 100%    /* 6th stripe /
+    
+  );
+}*/
